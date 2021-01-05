@@ -40,8 +40,8 @@ class Comments(Base):
     post_id = Column(Integer, ForeignKey('post.id'))
     post = relationship(Post)
 
-class Relationship(Base):
-    __tablename__ = 'relationship'
+class Following(Base):
+    __tablename__ = 'following'
     # Here we define columns for the table person
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
